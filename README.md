@@ -23,19 +23,21 @@ As requisições do projeto são bem simples:
 
 Para adicionar um usuário basta fazer as seguintes requisições: 
 Criar Usuário POST - http://localhost:8080/user
-    ``{
-	    "cpf": "123",
-	    "nome": "João",
-	    "email": "joao@joao",
-	    "documento": "123456",
-	    "endereco": {
-	    "rua": "lala",
-	    "bairo": "lalala",
-	    "numero": "123",
-	    "cep": "lalala",
-	    "cidade": "lalala",
-	    "complemento": "lalalala"
-	    }
-    ``}
+   ```
+{
+	"cpf": "123",
+	"nome": "João",
+	"email": "joao@joao",
+	"documento": "123456",
+	"endereco": {
+	"rua": "lala",
+	"bairo": "lalala",
+	"numero": "123",
+	"cep": "lalala",
+	"cidade": "lalala",
+	"complemento": "lalalala"
+	}
+}
+````
    Buscar usuário GET - http://localhost:8080/user?email=joao@joao
    Buscar usuário DELETE - http://localhost:8080/user?email=joao@joao
